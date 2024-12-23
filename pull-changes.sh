@@ -1,4 +1,4 @@
-!#/bin/bash
+#!/bin/bash
 
 DIFF=$(git diff origin/master)
 
@@ -8,4 +8,3 @@ if [ -z "$DIFF"]; then
 else
     echo "Found some changes: "
     echo "$DIFF"
-fi
