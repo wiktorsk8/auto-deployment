@@ -1,6 +1,6 @@
 # Project Title
 
-![Project Logo](https://www.plesk.com/blog/business-industry/devops-cycle-2-automated-deployment-operations-monitoring/ "Auto deployment")
+![Project Logo](https://cdn1.plesk.com/wp-content/uploads/2018/12/27022732/automated-deployment.png "Auto deployment")
 
 ## Description
 
