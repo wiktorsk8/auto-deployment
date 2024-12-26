@@ -23,7 +23,7 @@ Simple bash auto deployment.
 6. Now you can check permissions - ```ls -la```
 
 ## Deployment scheduling via crontab
-
+The following configuration pulls new changes every minute.
 ### 1. Open the Crontab file
 ```crontab -e```
 ### 2. At the top of the file add this line:
