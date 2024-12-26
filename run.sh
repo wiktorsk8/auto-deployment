@@ -1,7 +1,8 @@
 #!/bin/bash
 
-SCRIPT_PATH=$(realpath "$0")
-SCRIPT_DIR=$(dirname "$SCRIPT_PATH")
+AUTO_DEPLOYMENT_ROOT=$(dirname "$0")
 
-source "$SCRIPT_DIR"/env-setup.sh
-"$SCRIPT_DIR"/pull-changes.sh
+export AUTO_DEPLOYMENT_ROOT
+
+source "$AUTO_DEPLOYMENT_ROOT"/env-setup.sh
+"$AUTO_DEPLOYMENT_ROOT"/pull-changes.sh
