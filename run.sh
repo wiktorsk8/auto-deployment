@@ -1,4 +1,6 @@
 #!/bin/bash
 
-source $(pwd)/env-setup.sh
-$(pwd)/pull-changes.sh
+SCRIPT_PATH=$(realpath "$0")
+
+source "$SCRIPT_PATH"/env-setup.sh
+"$SCRIPT_PATH"/pull-changes.sh
