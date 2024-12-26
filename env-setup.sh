@@ -1,4 +1,3 @@
 #!/bin/bash
 
-
-PROJECT_REPO_URL="dupa.pl"
+export $(grep -v '^#' .env | xargs)

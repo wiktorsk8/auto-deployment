@@ -1,10 +1,17 @@
 #!/bin/bash
 
-DIFF=$(git diff origin/master)
+ROOT_DIR=$(pwd)
 
-if [ -z "$DIFF"]; then
-    echo "Changes not detected"
+cd "$PROJECT_PATH" || { echo "Failed to change directory to $PROJECT_PATH"; exit 1; }
+
+git fetch origin
+
+if git log HEAD.."origin/$BRANCH_NAME" --oneline | grep -q .; then
+    echo "Changes detected on $BRANCH_NAME. Pulling changes..."
+    git pull origin "$BRANCH_NAME"
 
 else
-    echo "Found some changes: "
-    echo "$DIFF"
+    echo "Changes not found on branch $BRANCH_NAME."
+fi
+
+cd "$ROOT_DIR"
