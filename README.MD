@@ -14,8 +14,8 @@ Simple bash auto deployment.
 ## Installation && configuration
 
 1. Clone the repo:
-   <br>2. SSH : ```git clone git@github.com:wiktorsk8/auto-deployment.git```
-   <br>3. HTTPS : ```git clone https://github.com/wiktorsk8/auto-deployment.git```
+   <br>a. SSH : ```git clone git@github.com:wiktorsk8/auto-deployment.git```
+   <br>b. HTTPS : ```git clone https://github.com/wiktorsk8/auto-deployment.git```
 2. `` cd /auto-deployment``
 3. ```cp .env.example .env```
 4. ```PROJECT_PATH``` is an absolute path to the project you want to deploy automatically
