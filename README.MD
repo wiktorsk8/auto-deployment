@@ -1,4 +1,4 @@
-# Project Title
+# Bash auto deployment
 
 ![Project Logo](https://cdn1.plesk.com/wp-content/uploads/2018/12/27022732/automated-deployment.png "Auto deployment")
 
